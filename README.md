@@ -2,11 +2,10 @@
 
 ---
 ---
----
 
 # BASIC
 
-## Networking
+### Networking
 
 Get the IP address of all interfaces
 
