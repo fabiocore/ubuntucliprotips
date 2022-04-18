@@ -9,28 +9,29 @@
 
 Get the IP address of all interfaces `networkctl status`
 
-Display all IP addresses of the host
-`hostname -I`
+Display all IP addresses of the host `hostname -I`
 
 Enable/disable interface
 
-`ip link set <interface>  up`
+```
+ip link set <interface>  up
 
-`ip link set <interface> down`
+ip link set <interface> down
+```
 
 Manage firewall rules:
 
-`enable firewall: sudo ufw enable`
+```
+enable firewall: sudo ufw enable
 
-`list rules: sudo ufw status`
+list rules: sudo ufw status
 
-`allow port: sudo ufw allow <port>`
+allow port: sudo ufw allow <port>
 
-`deny port: sudo ufw deny <port>`
+deny port: sudo ufw deny <port>
+```
 
-Connect remotely through SSH
-
-`ssh <user>@<host IP>`
+Connect remotely through SSH `ssh <user>@<host IP>`
 
 ### Security
 
