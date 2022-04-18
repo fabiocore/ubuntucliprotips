@@ -35,49 +35,37 @@ Connect remotely through SSH `ssh <user>@<host IP>`
 
 ### Security
 
-Show which users are logged in
+Show which users are logged in `w`
 
-`w`
+Get password expiration data for <user> `chage -l <user>`
 
-Get password expiration data for <user>
+Set password expiration date for <user> `sudo chage <user>`
 
-`chage -l <user>`
+Lock a user account `sudo passwd -l <user>`
 
-Set password expiration date for <user>
+Unlock a user account `sudo passwd -u <user>`
 
-`sudo chage <user>`
+List open ports and associated processes `sudo netstat -tulpn`
 
-Lock a user account
+Automatically detect and ban abusive IP addresses `sudo apt install fail2ban`
 
-`sudo passwd -l <user>`
+Show banned IP addresses 
+  
+```
+sudo fail2ban-client status
 
-Unlock a user account
+sudo fail2ban-client status <jail>
+```
 
-`sudo passwd -u <user>`
-
-List open ports and associated processes
-
-`sudo netstat -tulpn`
-
-Automatically detect and ban abusive IP addresses
-
-`sudo apt install fail2ban`
-
-Show banned IP addresses
-
-`sudo fail2ban-client status`
-
-`sudo fail2ban-client status <jail>`
-
-Get the support status for installed packages
-
-`ubuntu-support-status`
+Get the support status for installed packages `ubuntu-support-status`
 
 Enable kernel live patching
 
-`sudo snap install canonical-livepatch`
+```
+sudo snap install canonical-livepatch
 
-`sudo canonical-livepatch enable <token>`
+sudo canonical-livepatch enable <token>
+```
 
 Visit [ubuntu.com/livepatch](ubuntu.com/livepatch) to get a free token for up to 3 machines.
 
@@ -85,33 +73,29 @@ Visit [ubuntu.com/livepatch](ubuntu.com/livepatch) to get a free token for up to
 
 Search for packages
 
-`apt search <string>`
+```
+apt search <string>
 
-`snap find <string>`
+snap find <string>
+```
 
-List available updates
+List available updates `apt list --upgradable`
 
-`apt list --upgradable`
+Apply all available updates `sudo apt update && sudo apt upgrade`
 
-Apply all available updates
+Install from the Ubuntu archive `sudo apt install <package>`
 
-`sudo apt update && sudo apt upgrade`
-
-Install from the Ubuntu archive
-
-`sudo apt install <package>`
-
-Install from the snap store
-
-`sudo snap install <package>`
+Install from the snap store `sudo snap install <package>`
 
 Which package provides this file?
 
-`sudo apt install apt-file`
+```
+sudo apt install apt-file
 
-`sudo apt-file update`
+sudo apt-file update
 
-`apt-file <filename or command>`
+apt-file <filename or command>
+
 
 ### Files
 
