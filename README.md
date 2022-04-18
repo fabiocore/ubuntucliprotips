@@ -7,12 +7,9 @@
 
 ### Networking
 
-Get the IP address of all interfaces
-
-`networkctl status`
+Get the IP address of all interfaces `networkctl status`
 
 Display all IP addresses of the host
-
 `hostname -I`
 
 Enable/disable interface
