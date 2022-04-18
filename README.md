@@ -1,6 +1,8 @@
 # Ubuntu Server CLI pro tips
 
 ---
+---
+---
 
 # BASIC
 
