@@ -35,7 +35,7 @@ Connect remotely through SSH
 
 `ssh <user>@<host IP>`
 
-## Security
+### Security
 
 Show which users are logged in
 
@@ -83,7 +83,7 @@ Enable kernel live patching
 
 Visit [ubuntu.com/livepatch](ubuntu.com/livepatch) to get a free token for up to 3 machines.
 
-## Packages
+### Packages
 
 Search for packages
 
@@ -115,7 +115,7 @@ Which package provides this file?
 
 `apt-file <filename or command>`
 
-## Files
+### Files
 
 List files
 
@@ -170,7 +170,7 @@ Search string recursively in directory
 
 # ADVANCED
 
-## Files
+### Files
 
 Find files modified in the last n minutes
 
@@ -225,7 +225,7 @@ Copy directory recursively from remote Server
 eg. scp -r admin@192.0.0.0:/config /tmp
 
 
-## System
+### System
 
 Display kernel version
 
@@ -289,7 +289,7 @@ Bring command <n> to the foreground
 
 `fg <n>`
 
-## Kubernetes and containers
+### Kubernetes and containers
 
 Install MicroK8S and list available add-ons
 
@@ -338,7 +338,7 @@ Pull a file from a LXD container
 [LXD documentation](https://linuxcontainers.org/lxd/docs/master/)
 
 
-## Virtualisation
+### Virtualisation
 
 Install Multipass and launch an Ubuntu VM
 
