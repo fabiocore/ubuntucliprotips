@@ -95,59 +95,45 @@ sudo apt install apt-file
 sudo apt-file update
 
 apt-file <filename or command>
-
+```
 
 ### Files
 
-List files
+List files `ls`
 
-`ls`
-
-List files with permissions and dates
-
-`ls -al`
+List files with permissions and dates `ls -al`
 
 Common file operations
 
-`create empty: touch <filename>`
+```
+create empty: touch <filename>
 
-`create with content: echo "<content>" > <filename>`
+create with content: echo "<content>" > <filename>
 
-`append content: echo "<content>" >> <filename>`
+append content: echo "<content>" >> <filename>
 
-`display a text file: cat <file>`
-
+display a text file: cat <file>
+  
 **Tip:** Use [bat](https://github.com/sharkdp/bat) instead of cat to get a pretty view of files like json, yaml, others.
 
-`copy: cp <file> <target filename>`
+copy: cp <file> <target filename>
 
-`move/rename: mv <file> <target directory/filename>`
+move/rename: mv <file> <target directory/filename>
 
-`delete: rm <file>`
+delete: rm <file>
+```
 
-Create a directory
+Create a directory `mkdir <directory>`
 
-`mkdir <directory>`
+Create directories recursively `mkdir -p <directory1>/<directory2>`
 
-Create directories recursively
+Delete a directory recursively `rm -r <directory>`
 
-`mkdir -p <directory1>/<directory2>`
+Quick file search `locate <q>`
 
-Delete a directory recursively
+Search string in file `grep <string> <filename>`
 
-`rm -r <directory>`
-
-Quick file search
-
-`locate <q>`
-
-Search string in file
-
-`grep <string> <filename>`
-
-Search string recursively in directory
-
-`grep -Iris <string> <directory>`
+Search string recursively in directory `grep -Iris <string> <directory>`
 
 
 # ADVANCED
