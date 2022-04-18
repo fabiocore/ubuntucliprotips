@@ -142,11 +142,11 @@ Search string recursively in directory `grep -Iris <string> <directory>`
 
 Find files modified in the last n minutes `find <directory> -mmin -<n> -type f`
 
-eg. find . -mmin -5 -type f
+eg. $ find . -mmin -5 -type f
 
 Show only the nth column `col<n> "<separator>" <filename>`
 
-eg. col2 "," foo.csv
+eg. $ col2 "," foo.csv
 
 Display file paginated `less <filename>`
 
@@ -174,11 +174,11 @@ tar.gz: tar xvf <tar.gz file>
 
 Copy file to remote Server `scp <filename> <user@server>:<destination>`
 
-eg. scp config.yaml admin@192.0.0.0:/config
+eg. $ scp config.yaml admin@192.0.0.0:/config
 
 Copy directory recursively from remote Server `scp -r <user@server>:<source> <destination>`
 
-eg. scp -r admin@192.0.0.0:/config /tmp
+eg. $ scp -r admin@192.0.0.0:/config /tmp
 
 ### System
 
@@ -292,7 +292,7 @@ sudo snap install microstack --classic
 sudo microstack.init
 
 microstack.launch
-
+```
 
 The Horizon dashbaord is available at 10.20.20.1
 Default credentials: admin / keystone
